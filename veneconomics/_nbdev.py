@@ -4,7 +4,7 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"say_hello": "00_core.ipynb"}
 
-modules = ["core.py"]
+modules = ["first_module.py"]
 
 doc_url = "https://fmussari.github.io/veneconomics/"
 
