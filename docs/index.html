@@ -58,7 +58,7 @@ nb_path: "index.ipynb"
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Inside each module folder, like for example <code>veneconomics</code>, there is a <code>__init__.py</code> file.
-Adding to that file the following line of code:</p>
+According to this video: <a href="https://youtu.be/Hrs7iEYmRmg">nbdev tutorial</a>, adding to that file the following line of code:</p>
 
 <pre><code>from .first_model import *</code></pre>
 <p>Will allow to load the module like this:</p>
@@ -83,6 +83,15 @@ Adding to that file the following line of code:</p>
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>But in my case it caused problems and works leaving <code>__init__.py</code> file as is.
+Well, not really since it didn't pass github actions on commit.<br>
+So I don't know what is best, if leave it origianl to locally execute <code>nbdev_build_docs</code> vs commit. I think it is best to pass the commit.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Say Hello</p>
